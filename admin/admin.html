@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard - Buddha Express</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="admin-header">
+    <h1>Welcome, Admin</h1>
+    <p>Manage everything from here 🔧</p>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <main class="admin-main">
+    <!-- User Management -->
+    <section class="admin-section">
+      <h2>👤 User Management</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>Ram Bahadur</td>
+          <td>ram@example.com</td>
+          <td>User</td>
+          <td><button>Remove</button></td>
+        </tr>
+        <tr>
+          <td>Sita Devi</td>
+          <td>sita@example.com</td>
+          <td>Agent</td>
+          <td><button>Promote</button></td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Bookings -->
+    <section class="admin-section">
+      <h2>🚌 Recent Bookings</h2>
+      <ul>
+        <li><strong>Hari</strong> booked Kathmandu → Pokhara on 2025-07-30</li>
+        <li><strong>Maya</strong> booked Kathmandu → Chitwan on 2025-07-29</li>
+      </ul>
+    </section>
+
+    <!-- Bus Management -->
+    <section class="admin-section">
+      <h2>🚍 Bus Management</h2>
+      <form>
+        <label>Route</label>
+        <input type="text" placeholder="e.g. KTM to Pokhara" />
+
+        <label>Date</label>
+        <input type="date" />
+
+        <label>Time</label>
+        <input type="time" />
+
+        <label>Total Seats</label>
+        <input type="number" />
+
+        <button type="submit">Add Bus</button>
+      </form>
+    </section>
+
+    <!-- Agent Requests -->
+    <section class="admin-section">
+      <h2>📥 Agent Requests</h2>
+      <div class="request">
+        <p><strong>Raju Travels</strong> from Butwal wants to join as agent.</p>
+        <button>Approve</button>
+        <button>Deny</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function logout() {
+      // redirect to logout PHP or JS session destroy
+      window.location.href = "logout.php";
+    }
+  </script>
+</body>
+</html>
