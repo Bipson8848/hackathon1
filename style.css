@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: monospace;
     background: #CFDEE7;
 }
 
@@ -35,7 +35,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 400px;
-    background: linear-gradient(to bottom, #e6f2ff, #ffffff);
+    background: #CFDEE7;
     overflow: hidden;
     padding: 2rem;
 }
