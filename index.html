@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buddha Express</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-left">Buddha Express</div>
+    <div class="nav-right">
+      <a href="#">Bus Ticket</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Signup</a>
+      <a href="#">Login</a>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h2>Find Your Bus</h2>
+      <input type="text" id="from" placeholder="From">
+      <input type="text" id="to" placeholder="To">
+      <input type="date" id="date">
+      <button onclick="searchRoute()">Search</button>
+    </div>
+    <div class="bus-animation">
+      <div class="bus">
+        <img src="buddha.png" alt="Bus Image">
+      </div>
+    </div>
+    <div class="destinations">
+      Kathmandu | Pokhara | Chitwan | Dharan | Nepalgunj | Biratnagar | Butwal | Janakpur | Lumbini
+    </div>
+  </div>
+
+  <!-- dashboard -->
+
+  <script src="script.js">
+  </script>
+</body>
+</html>
